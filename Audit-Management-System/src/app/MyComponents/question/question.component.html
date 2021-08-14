@@ -1,0 +1,103 @@
+<div class="container">
+  <form  [formGroup]="questionGroup" class="px-5 py-4 border rounded" (ngSubmit)="getResponse(questionGroup.value)">
+
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            
+            <th scope="col">Questions</th>
+            <th scope="col">Response</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{newdata[0].question}}</td>
+            <td><div class="input-group">
+              <div>
+                  <input  type="radio" value="Yes"  formControlName="response1">
+                  <label for="Internal">Yes</label>
+               </div>
+      
+               <div>
+                  <input  type="radio" value="No"  formControlName="response1">
+                  <label for="No">No</label>
+               </div>
+          </div></td>
+          </tr>
+          
+          <tr>
+            <td>{{newdata[1].question}}</td>
+            <td>
+              <div class="input-group">
+                <div>
+                    <input  type="radio" value="yes"  formControlName="response2">
+                    <label for="yes">Yes</label>
+                 </div>
+        
+                 <div>
+                    <input  type="radio" value="No"  formControlName="response2">
+                    <label for="No">No</label>
+                 </div>
+            </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>{{newdata[2].question}}</td>
+            <td>
+              <div class="input-group">
+                <div>
+                    <input  type="radio" value="Yes"  formControlName="response3">
+                    <label for="Yes">Yes</label>
+                 </div>
+        
+                 <div>
+                    <input  type="radio" value="No"  formControlName="response3">
+                    <label for="No">No</label>
+                 </div>
+            </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>{{newdata[3].question}}</td>
+            <td>
+              <div class="input-group">
+                <div>
+                    <input  type="radio" value="Yes"  formControlName="response4">
+                    <label for="yes">Yes</label>
+                 </div>
+        
+                 <div>
+                    <input  type="radio" value="No"  formControlName="response4">
+                    <label for="No">No</label>
+                 </div>
+            </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>{{newdata[4].question}}</td>
+            <td>
+              <div class="input-group">
+                <div>
+                    <input  type="radio" value="Yes"  formControlName="response5">
+                    <label for="yes">Yes</label>
+                 </div>
+        
+                 <div>
+                    <input  type="radio" value="No"  formControlName="response5">
+                    <label for="No">No</label>
+                 </div>
+            </div>
+            </td>
+          </tr>
+          
+        </tbody>
+    </table>
+
+      <input type="submit" class="btn btn-primary btn-block mt-3"
+      value="Submit" style="background: steelblue;">
+  </form>
+</div>

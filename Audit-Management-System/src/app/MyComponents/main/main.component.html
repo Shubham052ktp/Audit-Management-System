@@ -1,0 +1,42 @@
+<div class="container">
+   
+    <h1 class="m-6 text-center display-4" style="color: green">Project Details</h1>
+
+    <form [formGroup]="mainGroup" class="px-5 py-4 border rounded" (ngSubmit)="getQuestion(mainGroup.value)">
+
+        <div class="form-group">
+            <label path="projectName" style="color: darkred; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Project Name</label>
+            <input path="projectName" formControlName="projectName" required="required"
+                class="form-control" id="ProjectName" />
+
+        </div>
+        <div class="form-group">
+            <label path="projectManagerName" style="color: darkred; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Project Manager Name</label>
+            <input path="projectManagerName" formControlName="projectManager" required="required" class="form-control" id="ProjectManagerName" />
+        </div>
+        <div class="form-group">
+            <label path="applicationOwnerName" style="color: darkred; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Application Owner</label>
+            <input path="applicationOwnerName" formControlName="AppOwnerName" required="required"
+                class="form-control" id="ApplicationOwnerName" />
+        </div>
+
+        <div class="form-group">
+            <label for="AuditType" style="color: darkred; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Audit Type</label>
+            <!-- <form modelAttribute="auditType"> -->
+                <div class="input-group">
+                    <div>
+                        <input id="int" type="radio" value="Internal"  formControlName="auditType">
+                        <label for="Internal">Internal</label>
+                     </div>
+            
+                     <div>
+                        <input id="sox" type="radio" value="SOX"  formControlName="auditType">
+                        <label for="SOX">SOX</label>
+                     </div>
+                </div>
+                <input type="submit" class="btn btn-primary btn-block mt-3"
+                    value="Submit" style="background: steelblue;">
+            <!-- </form> -->
+        </div>
+    </form>
+</div>

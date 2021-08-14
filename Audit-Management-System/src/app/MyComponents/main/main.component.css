@@ -1,0 +1,12 @@
+body {
+	background:#66ffff;
+}
+form {
+	background: beige;
+	border-color: darkolivegreen;
+}
+h1 {
+	color: #FFF;
+	padding-top: 10px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
