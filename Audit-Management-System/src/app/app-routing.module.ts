@@ -4,12 +4,14 @@ import { LoginComponent } from './MyComponents/login/login.component';
 import { MainComponent } from './MyComponents/main/main.component';
 import { QuestionComponent } from './MyComponents/question/question.component';
 import { ConfirmStatusComponent } from './MyComponents/confirm-status/confirm-status.component';
+import { ResultComponent } from './MyComponents/result/result.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'main', component: MainComponent},
   {path: 'questions', component: QuestionComponent},
-  {path: 'confirmStatus', component: ConfirmStatusComponent}
+  {path: 'confirmStatus', component: ConfirmStatusComponent},
+  {path: 'result', component: ResultComponent}
 ];
 
 @NgModule({
@@ -17,4 +19,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents= [LoginComponent,MainComponent,QuestionComponent,ConfirmStatusComponent]
+export const routingComponents= [LoginComponent,MainComponent,QuestionComponent,ConfirmStatusComponent,ResultComponent]

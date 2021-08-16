@@ -5,6 +5,9 @@ import { environment } from 'src/environments/environment';
 import { UserData } from '../Model/userdata';
 import { QuestionList } from '../Model/QuestionList';
 import { AuditType } from '../Model/AuditType';
+import { AuditRequest } from '../Model/AuditRequest';
+import { AuditResponse } from '../Model/AuditResponse';
+import { AuditDetails } from '../Model/AuditDetails';
 
 @Injectable({
   providedIn: 'root'
@@ -46,4 +49,14 @@ export class ConfigService {
       headers:header});
   }
 
+  auditSeverity(auditRequest:any): Observable<AuditResponse>{
+
+    const auditSevertyURl= `${environment.auditSeverityURl}`
+    const header={
+      authorization: `Bearer ${localStorage.getItem("token")}`,
+      'Access-Control-Allow-Origin':'*'
+    }
+    return this.httpClient.post<AuditResponse>(auditSevertyURl,auditRequest,{headers:header});
+
+  }
 }

@@ -13,6 +13,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 //import { InternalQuestionsComponent } from './MyComponents/internal-questions/internal-questions.component';
 //import { SOXQuestionsComponent } from './MyComponents/sox-questions/sox-questions.component';
 import { QuestionComponent } from './MyComponents/question/question.component';
+//import { ResultComponent } from './Mycomponents/result/result.component';
 
 
 
@@ -21,6 +22,7 @@ import { QuestionComponent } from './MyComponents/question/question.component';
   declarations: [
     AppComponent,
     routingComponents,
+    
     
     
     

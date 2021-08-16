@@ -31,6 +31,9 @@ export class MainComponent implements OnInit {
     console.log(val);
     console.log(val.auditType);
     localStorage.setItem('AuditType',val.auditType)
+    localStorage.setItem('projectName',val.projectName)
+    localStorage.setItem('projectManager',val.projectManager)
+    localStorage.setItem('ApplicationOwner',val.AppOwnerName)
 
   if(this.token != null)
   {

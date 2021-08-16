@@ -69,6 +69,7 @@ export class QuestionComponent implements OnInit {
         this.arry=data;
         console.log("Updated..");
         console.log(this.arry);
+        localStorage.setItem('res',JSON.stringify(this.arry))
       });
     }
     this._router.navigate(['confirmStatus'])

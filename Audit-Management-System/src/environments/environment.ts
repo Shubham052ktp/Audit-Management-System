@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   loginBaseURL: 'http://localhost:8090/login',
   getChecklistURL: 'http://localhost:9120/getChecklist',
-  saveResponsesURL: 'http://localhost:9120/saveResponses'
+  saveResponsesURL: 'http://localhost:9120/saveResponses',
+  auditSeverityURl: 'http://localhost:9092/ProjectExecutionStatus'
 };
 
 /*
